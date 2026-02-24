@@ -6,8 +6,8 @@ import { sanityConfig } from '../lib/sanity'
 
 export default defineConfig({
   ...sanityConfig,
-  name:  'varentis-studio',
-  title: 'Varentis Studio',
+  name:  'abasin-studio',
+  title: 'Abasin Studio',
   basePath: '/studio',
 
   plugins: [

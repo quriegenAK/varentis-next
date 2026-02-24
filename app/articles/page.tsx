@@ -5,7 +5,7 @@ import type { ArticleCard } from '@/lib/sanity'
 
 export const metadata: Metadata = {
   title: 'Point of View',
-  description: 'Architectural thinking on AI platforms, regulated systems, and data infrastructure from Varentis.',
+  description: 'Architectural thinking on AI platforms, regulated systems, and data infrastructure from Abasin Co.',
 }
 
 /* Force revalidation every 60s (ISR) */

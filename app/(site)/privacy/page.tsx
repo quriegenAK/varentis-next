@@ -29,7 +29,7 @@ export default function PrivacyPage() {
             textDecoration: 'none',
           }}
         >
-          ← Back to Varentis
+          ← Back to Abasin Co.
         </Link>
 
         <h1
@@ -55,10 +55,10 @@ export default function PrivacyPage() {
           Last updated: February 2026
         </p>
 
-        <div className="prose-varentis" style={{ maxWidth: 720 }}>
+        <div className="prose-abasin" style={{ maxWidth: 720 }}>
           <h2 style={{ marginTop: 32, marginBottom: 12 }}>1. Overview</h2>
           <p>
-            Varentis (operated by Ignitable Inc.) takes your privacy seriously. This policy explains what information we collect and how we use it.
+            Abasin Co. (operated by Ignitable Inc.) takes your privacy seriously. This policy explains what information we collect and how we use it.
           </p>
 
           <h2 style={{ marginTop: 32, marginBottom: 12 }}>2. Information We Collect</h2>
@@ -82,8 +82,8 @@ export default function PrivacyPage() {
 
           <h2 style={{ marginTop: 32, marginBottom: 12 }}>5. Contact</h2>
           <p>
-            For any privacy concerns,{' '}
-            <Link href="/#contact" style={{ color: 'var(--gold)', textDecoration: 'none', borderBottom: '1px solid var(--gold-lo)', paddingBottom: 1, transition: 'color 0.2s' }}>get in touch here</Link>.
+            For any privacy concerns, contact us at{' '}
+            <Link href="/#contact" style={{ color: 'var(--gold)', textDecoration: 'none', borderBottom: '1px solid var(--gold-lo)', paddingBottom: 1, transition: 'color 0.2s' }}>abasinco.com/contact</Link>.
           </p>
         </div>
       </div>

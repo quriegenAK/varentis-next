@@ -180,7 +180,7 @@ body::after {
 }
 
 /* Portable text (Sanity article body) */
-.prose-varentis h2 {
+.prose-abasin h2 {
   font-family: var(--font-playfair), serif;
   font-size: clamp(1.6rem, 3vw, 2.2rem);
   font-weight: 400;
@@ -188,7 +188,7 @@ body::after {
   margin: 2.5rem 0 1rem;
   line-height: 1.2;
 }
-.prose-varentis h3 {
+.prose-abasin h3 {
   font-family: var(--font-inter), sans-serif;
   font-size: 1rem;
   font-weight: 500;
@@ -197,30 +197,30 @@ body::after {
   color: var(--text-1);
   margin: 2rem 0 0.75rem;
 }
-.prose-varentis p {
+.prose-abasin p {
   font-family: var(--font-inter), sans-serif;
   font-size: 1.05rem;
   line-height: 1.8;
   color: var(--text-2);
   margin-bottom: 1.5rem;
 }
-.prose-varentis strong { color: var(--text-1); font-weight: 500; }
-.prose-varentis em    { font-style: italic; color: var(--gold); }
-.prose-varentis blockquote {
+.prose-abasin strong { color: var(--text-1); font-weight: 500; }
+.prose-abasin em    { font-style: italic; color: var(--gold); }
+.prose-abasin blockquote {
   border-left: 2px solid var(--gold);
   padding: 1rem 1.5rem;
   margin: 2rem 0;
   background: var(--gold-glow);
 }
-.prose-varentis blockquote p { color: var(--text-1); font-style: italic; margin: 0; }
-.prose-varentis code {
+.prose-abasin blockquote p { color: var(--text-1); font-style: italic; margin: 0; }
+.prose-abasin code {
   font-family: var(--font-jetbrains), monospace;
   font-size: 0.82rem;
   background: var(--bg-2);
   color: var(--gold);
   padding: 2px 6px;
 }
-.prose-varentis ul, .prose-varentis ol {
+.prose-abasin ul, .prose-abasin ol {
   font-family: var(--font-inter), sans-serif;
   font-size: 1rem;
   line-height: 1.75;
@@ -228,7 +228,7 @@ body::after {
   padding-left: 1.5rem;
   margin-bottom: 1.5rem;
 }
-.prose-varentis li { margin-bottom: 0.5rem; }
+.prose-abasin li { margin-bottom: 0.5rem; }
 
 /* Cursor */
 .cur-dot, .cur-ring { pointer-events: none; }
