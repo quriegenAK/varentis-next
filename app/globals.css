@@ -1,0 +1,234 @@
+/* ─── Google Fonts (must be first) ───────────────── */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=JetBrains+Mono:wght@300;400;500&family=Inter:wght@300;400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── Keyframes (for inline style animation) ─── */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+/* Disable custom cursor on touch / small viewports */
+@media (max-width: 767px) {
+  body { cursor: auto; }
+}
+
+/* ─── Dark theme (default) ───────────────────── */
+:root, [data-theme="dark"] {
+  --bg-0:        #070809;
+  --bg-1:        #0d0f10;
+  --bg-2:        #131618;
+  --bg-3:        #1a1e21;
+  --bg-card:     #111416;
+  --border:      rgba(255,255,255,0.07);
+  --border-gold: rgba(196,158,78,0.25);
+  --gold:        #c49e4e;
+  --gold-hi:     #dbb96a;
+  --gold-lo:     #8a6e30;
+  --gold-glow:   rgba(196,158,78,0.12);
+  --text-1:      #f2ede4;
+  --text-2:      #9a948a;
+  --text-3:      #5a5650;
+  --text-inv:    #070809;
+  --grid:        rgba(255,255,255,0.025);
+  --noise-op:    0.025;
+  --shadow:      0 24px 64px rgba(0,0,0,0.6);
+  --shadow-gold: 0 8px 32px rgba(196,158,78,0.2);
+  --logo-filter: brightness(0) invert(0.7);
+  --logo-brightness: brightness(0) invert(0.7);
+}
+
+/* ─── Light theme ────────────────────────────── */
+[data-theme="light"] {
+  --bg-0:        #fafaf8;
+  --bg-1:        #f4f2ee;
+  --bg-2:        #ede9e2;
+  --bg-3:        #e5e0d8;
+  --bg-card:     #ffffff;
+  --border:      rgba(0,0,0,0.08);
+  --border-gold: rgba(160,120,40,0.2);
+  --gold:        #96740a;
+  --gold-hi:     #7a5e06;
+  --gold-lo:     #c4a44e;
+  --gold-glow:   rgba(150,116,10,0.08);
+  --text-1:      #0f1012;
+  --text-2:      #5a5650;
+  --text-3:      #9a948a;
+  --text-inv:    #fafaf8;
+  --grid:        rgba(0,0,0,0.03);
+  --noise-op:    0.015;
+  --shadow:      0 24px 64px rgba(0,0,0,0.08);
+  --shadow-gold: 0 8px 32px rgba(150,116,10,0.12);
+  --logo-filter: none;
+  --logo-brightness: brightness(0) invert(0.2);
+}
+
+/* ─── Base ───────────────────────────────────── */
+*,*::before,*::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg-0);
+  color: var(--text-1);
+  font-family: var(--font-jetbrains), 'JetBrains Mono', monospace;
+  transition: background 0.4s ease, color 0.4s ease;
+  overflow-x: hidden;
+  cursor: none;
+}
+
+/* Noise overlay */
+body::after {
+  content: '';
+  position: fixed; inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
+  opacity: var(--noise-op);
+  pointer-events: none;
+  z-index: 9000;
+  transition: opacity 0.4s ease;
+}
+
+/* Grid pattern utility */
+.grid-bg {
+  position: absolute; inset: 0;
+  background-image:
+    linear-gradient(var(--grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+  background-size: 64px 64px;
+  pointer-events: none;
+  transition: background 0.4s ease;
+}
+
+/* Gold rule */
+.gold-rule {
+  width: 48px; height: 1px;
+  background: var(--gold);
+  margin: 28px 0;
+}
+
+/* Contact email link hover (avoids passing event handlers to client) */
+.contact-email-link:hover {
+  color: var(--gold) !important;
+  border-bottom-color: var(--gold) !important;
+}
+
+/* Hero: hide video and overlay on mobile, use static background */
+@media (max-width: 768px) {
+  .hero-section .hero-video,
+  .hero-section .hero-overlay {
+    display: none !important;
+  }
+}
+
+/* Contact form placeholder color */
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: var(--text-3);
+}
+
+/* Contact section: stack columns on mobile */
+@media (max-width: 768px) {
+  .contact-section-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* Industries row hover (avoids passing event handlers to client) */
+.industries-row-hover:hover {
+  padding-left: 12px;
+}
+
+/* Footer nav link hover (Footer is a Server Component) */
+.footer-link:hover {
+  color: var(--text-2) !important;
+}
+
+/* Articles list card hover (Server Component) */
+.articles-card-hover:hover {
+  background: var(--bg-card) !important;
+  border-left-color: var(--gold) !important;
+}
+
+/* Articles back link hover (Server Component) */
+.articles-back-link:hover {
+  color: var(--text-2) !important;
+}
+
+/* Articles CTA button hover (Server Component) */
+.articles-cta-btn:hover {
+  background: var(--gold-hi) !important;
+}
+
+/* Section label */
+.s-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  font-family: var(--font-jetbrains), monospace;
+  font-size: 0.6rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--gold-lo);
+  margin-bottom: 28px;
+}
+.s-label::before {
+  content: attr(data-n);
+  color: var(--text-3);
+}
+
+/* Portable text (Sanity article body) */
+.prose-varentis h2 {
+  font-family: var(--font-playfair), serif;
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-weight: 400;
+  color: var(--text-1);
+  margin: 2.5rem 0 1rem;
+  line-height: 1.2;
+}
+.prose-varentis h3 {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-1);
+  margin: 2rem 0 0.75rem;
+}
+.prose-varentis p {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--text-2);
+  margin-bottom: 1.5rem;
+}
+.prose-varentis strong { color: var(--text-1); font-weight: 500; }
+.prose-varentis em    { font-style: italic; color: var(--gold); }
+.prose-varentis blockquote {
+  border-left: 2px solid var(--gold);
+  padding: 1rem 1.5rem;
+  margin: 2rem 0;
+  background: var(--gold-glow);
+}
+.prose-varentis blockquote p { color: var(--text-1); font-style: italic; margin: 0; }
+.prose-varentis code {
+  font-family: var(--font-jetbrains), monospace;
+  font-size: 0.82rem;
+  background: var(--bg-2);
+  color: var(--gold);
+  padding: 2px 6px;
+}
+.prose-varentis ul, .prose-varentis ol {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 1rem;
+  line-height: 1.75;
+  color: var(--text-2);
+  padding-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.prose-varentis li { margin-bottom: 0.5rem; }
+
+/* Cursor */
+.cur-dot, .cur-ring { pointer-events: none; }

@@ -1,0 +1,8 @@
+<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Outer A triangle -->
+  <path d="M30 4 L56 56 L4 56 Z" fill="none" stroke="#0057a8" stroke-width="4" stroke-linejoin="round"/>
+  <!-- Cross bar -->
+  <line x1="16" y1="40" x2="44" y2="40" stroke="#0057a8" stroke-width="3.5"/>
+  <!-- Teal apex dot -->
+  <circle cx="30" cy="4" r="5" fill="#00b2a9"/>
+</svg>

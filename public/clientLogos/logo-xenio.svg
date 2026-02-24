@@ -1,0 +1,13 @@
+<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Outer circle -->
+  <circle cx="30" cy="30" r="27" stroke="#06b6d4" stroke-width="2" fill="none"/>
+  <!-- Inner circle -->
+  <circle cx="30" cy="30" r="10" stroke="#06b6d4" stroke-width="1.5" fill="none" opacity="0.5"/>
+  <!-- Cross hairs — top/bottom/left/right -->
+  <line x1="30" y1="3"  x2="30" y2="20" stroke="#06b6d4" stroke-width="2"/>
+  <line x1="30" y1="40" x2="30" y2="57" stroke="#06b6d4" stroke-width="2"/>
+  <line x1="3"  y1="30" x2="20" y2="30" stroke="#06b6d4" stroke-width="2"/>
+  <line x1="40" y1="30" x2="57" y2="30" stroke="#06b6d4" stroke-width="2"/>
+  <!-- Precision centre dot -->
+  <circle cx="30" cy="30" r="4.5" fill="#06b6d4"/>
+</svg>
