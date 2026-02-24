@@ -34,7 +34,7 @@ async function seed() {
     credentials: '20+ Years · 11 Industries · F500',
     experience: 'Senior software architect with 20+ years building the systems that do not fail.',
     bio1: 'I have been the senior architect in the room when a platform fails at scale, when a compliance audit surfaces a structural flaw, when a data pipeline collapses under scientific data volumes nobody anticipated. I have built the systems that did not fail - and diagnosed the ones that did.',
-    bio2: 'Across eleven industries, the pattern is always the same: architectural decisions made in the first six months define the ceiling for the next five years. Varentis exists to give more organizations access to the level of architectural thinking that previously existed only inside the largest firms.',
+    bio2: 'Across eleven industries, the pattern is always the same: architectural decisions made in the first six months define the ceiling for the next five years. Abasin Co. exists to give more organizations access to the level of architectural thinking that previously existed only inside the largest firms.',
     bio3: 'I take a small number of engagements per year. Every client works directly with me.',
     skills: [
       'AAA', 'Cisco', 'Gap Inc', 'Safeway', 'Albertsons',
