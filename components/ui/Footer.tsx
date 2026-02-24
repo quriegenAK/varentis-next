@@ -111,7 +111,7 @@ export function Footer() {
             fontSize: '0.6rem', letterSpacing: '0.15em',
             textTransform: 'uppercase', color: 'var(--text-3)',
           }}>
-            © 2026 Ignitable Inc. All rights reserved
+            © 2026 Abasin Co. All rights reserved
           </span>
           <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
             <Link href="/privacy" style={{

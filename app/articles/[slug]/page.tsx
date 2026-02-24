@@ -190,7 +190,7 @@ export default async function ArticlePage(
           </div>
           <div>
             <div style={{ fontFamily: 'var(--font-inter), sans-serif', fontSize: '0.9rem', fontWeight: 500, color: 'var(--text-1)', marginBottom: 4 }}>Ash Khan</div>
-            <div style={{ fontFamily: 'var(--font-jetbrains), monospace', fontSize: '0.62rem', letterSpacing: '0.15em', textTransform: 'uppercase', color: 'var(--gold-lo)' }}>Founder & Principal Architect · Varentis</div>
+            <div style={{ fontFamily: 'var(--font-jetbrains), monospace', fontSize: '0.62rem', letterSpacing: '0.15em', textTransform: 'uppercase', color: 'var(--gold-lo)' }}>Founder & Principal Architect · Abasin Co.</div>
           </div>
         </div>
 

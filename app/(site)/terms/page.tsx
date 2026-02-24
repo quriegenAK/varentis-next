@@ -29,7 +29,7 @@ export default function TermsPage() {
             textDecoration: 'none',
           }}
         >
-          ← Back to Varentis
+          ← Back to Abasin Co.
         </Link>
 
         <h1
@@ -55,10 +55,10 @@ export default function TermsPage() {
           Last updated: February 2026
         </p>
 
-        <div className="prose-varentis" style={{ maxWidth: 720 }}>
+        <div className="prose-abasin" style={{ maxWidth: 720 }}>
           <h2 style={{ marginTop: 32, marginBottom: 12 }}>1. Services</h2>
           <p>
-            Varentis provides software architecture consulting and platform engineering services through Ignitable Inc.
+            Abasin Co. provides software architecture consulting and platform engineering services through Ignitable Inc.
           </p>
 
           <h2 style={{ marginTop: 32, marginBottom: 12 }}>2. Engagements</h2>
@@ -73,7 +73,7 @@ export default function TermsPage() {
 
           <h2 style={{ marginTop: 32, marginBottom: 12 }}>4. Limitation of Liability</h2>
           <p>
-            Varentis liability is limited to the fees paid under the applicable engagement. We are not liable for indirect or consequential damages.
+            Abasin Co. liability is limited to the fees paid under the applicable engagement. We are not liable for indirect or consequential damages.
           </p>
 
           <h2 style={{ marginTop: 32, marginBottom: 12 }}>5. Governing Law</h2>
@@ -83,8 +83,8 @@ export default function TermsPage() {
 
           <h2 style={{ marginTop: 32, marginBottom: 12 }}>6. Contact</h2>
           <p>
-            For any questions,{' '}
-            <Link href="/#contact" style={{ color: 'var(--gold)', textDecoration: 'none', borderBottom: '1px solid var(--gold-lo)', paddingBottom: 1, transition: 'color 0.2s' }}>get in touch here</Link>.
+            For any questions, contact us at{' '}
+            <Link href="/#contact" style={{ color: 'var(--gold)', textDecoration: 'none', borderBottom: '1px solid var(--gold-lo)', paddingBottom: 1, transition: 'color 0.2s' }}>abasinco.com/contact</Link>.
           </p>
         </div>
       </div>

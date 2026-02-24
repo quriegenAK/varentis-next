@@ -92,7 +92,7 @@ export function Hero() {
         }}
       >
         <Reveal>
-          <SLabel n="00">Varentis</SLabel>
+          <SLabel n="00">Abasin Co.</SLabel>
         </Reveal>
         <Reveal>
           <h1
@@ -1420,7 +1420,7 @@ const chips = [
 const defaultBio1 =
   "I've been the senior architect in the room when a platform fails at scale, when a compliance audit surfaces a structural flaw, when a data pipeline collapses under scientific data volumes nobody anticipated. I've built the systems that didn't fail, and diagnosed the ones that did."
 const defaultBio2 =
-  "Across eleven industries, the pattern is always the same: architectural decisions made in the first six months define the ceiling for the next five years. Varentis exists to give more organizations access to the level of architectural thinking that previously existed only inside the largest firms."
+  "Across eleven industries, the pattern is always the same: architectural decisions made in the first six months define the ceiling for the next five years. Abasin Co. exists to give more organizations access to the level of architectural thinking that previously existed only inside the largest firms."
 const defaultBio3 =
   "I take a small number of engagements per year. Every client works directly with me."
 
@@ -1487,7 +1487,7 @@ export function Founder({ data }: { data: FounderData | null }) {
               ) : (
                 <Image
                   src="/images/founder.png"
-                  alt={`${name}, Founder, Varentis`}
+                  alt={`${name}, Founder, Abasin Co.`}
                   fill
                   style={{ objectFit: "cover", objectPosition: "center top" }}
                   priority
@@ -2075,7 +2075,7 @@ function ContactFormBlock() {
               We&apos;ll respond within 48 hours. In the meantime, feel free to book a call directly.
             </p>
             <a
-              href="https://cal.com/ash-khan-varentis"
+              href="https://cal.com/ash-khan"
               style={{
                 fontFamily: "var(--font-jetbrains), monospace",
                 fontSize: "0.7rem",
@@ -2240,7 +2240,7 @@ function ContactFormBlock() {
                   color: "#c44",
                 }}
               >
-                Something went wrong. Please email ash@varentis.com directly.
+                Something went wrong. Please try again or book a call directly.
               </p>
             )}
           </form>
@@ -2336,11 +2336,6 @@ export function Contact() {
                 color: "var(--text-2)",
               }}
             >
-              <div style={{ marginBottom: 8 }}>
-                <span style={{ opacity: 0.8 }}>Email</span>
-                {"\u00A0\u00A0\u00A0\u00A0\u00A0"}
-                ash@varentis.com
-              </div>
               <div>
                 <span style={{ opacity: 0.8 }}>Response</span>
                 {"\u00A0\u00A0"}
@@ -2363,7 +2358,7 @@ export function Contact() {
                 heading="Book a Call"
                 body="30-minute architecture conversation. No pitch. No deck. Just a direct discussion about your problem."
                 buttonLabel="Schedule on Cal.com"
-                href="https://cal.com/ash-khan-varentis"
+                href="https://cal.com/ash-khan"
                 target="_blank"
               />
               <ContactFormBlock />

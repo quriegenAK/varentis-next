@@ -27,22 +27,22 @@ const inter = Inter({
 /* ─── Metadata ──────────────────────────────────── */
 export const metadata: Metadata = {
   title: {
-    default: 'Varentis · AI & Data Architecture',
-    template: '%s · Varentis',
+    default: 'Abasin Co. · AI & Data Architecture',
+    template: '%s · Abasin Co.',
   },
   description:
     'Senior-led platform engineering firm delivering production-grade AI and data architecture for regulated industries — insurance, pharma, energy, and enterprise.',
-  metadataBase: new URL('https://varentis.com'),
+  metadataBase: new URL('https://abasinco.com'),
   openGraph: {
     type: 'website',
-    siteName: 'Varentis',
-    title: 'Varentis · AI & Data Architecture',
+    siteName: 'Abasin Co.',
+    title: 'Abasin Co. · AI & Data Architecture',
     description: 'Platform engineering for industries where architecture is a matter of consequence.',
-    url: 'https://varentis.com',
+    url: 'https://abasinco.com',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Varentis · AI & Data Architecture',
+    title: 'Abasin Co. · AI & Data Architecture',
     description: 'Platform engineering for industries where architecture is a matter of consequence.',
   },
   robots: { index: true, follow: true },
