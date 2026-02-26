@@ -4,20 +4,7 @@ import Link from 'next/link'
 import { useState, useEffect } from 'react'
 import { useTheme } from 'next-themes'
 import { LogoDark, LogoLight } from '@/components/nav/LogoSvg'
-
-function useBreakpoint() {
-  const [bp, setBp] = useState<'mobile' | 'tablet' | 'desktop'>('desktop')
-  useEffect(() => {
-    const update = () => {
-      const w = window.innerWidth
-      setBp(w < 768 ? 'mobile' : w < 1024 ? 'tablet' : 'desktop')
-    }
-    update()
-    window.addEventListener('resize', update)
-    return () => window.removeEventListener('resize', update)
-  }, [])
-  return bp
-}
+import { useBreakpoint } from '@/components/sections/shared'
 
 export function Footer() {
   const { theme } = useTheme()
