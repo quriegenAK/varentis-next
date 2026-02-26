@@ -128,6 +128,7 @@ export function Nav() {
                 <a
                   key={href}
                   href={href}
+                  className="nav-link"
                   style={{
                     fontFamily: "var(--font-jetbrains), monospace",
                     fontSize: "0.68rem",
@@ -135,14 +136,7 @@ export function Nav() {
                     textTransform: "uppercase",
                     color: "var(--text-2)",
                     textDecoration: "none",
-                    transition: "color 0.2s",
                   }}
-                  onMouseEnter={(e) =>
-                    (e.currentTarget.style.color = "var(--text-1)")
-                  }
-                  onMouseLeave={(e) =>
-                    (e.currentTarget.style.color = "var(--text-2)")
-                  }
                 >
                   {label}
                 </a>
@@ -152,6 +146,7 @@ export function Nav() {
                 <button
                   onClick={toggleTheme}
                   aria-label="Toggle theme"
+                  className="nav-theme-btn"
                   style={{
                     width: 40,
                     height: 40,
@@ -163,15 +158,6 @@ export function Nav() {
                     justifyContent: "center",
                     cursor: "pointer",
                     color: "var(--text-2)",
-                    transition: "border-color 0.25s, transform 0.25s",
-                  }}
-                  onMouseEnter={(e) => {
-                    e.currentTarget.style.borderColor = "var(--gold)";
-                    e.currentTarget.style.transform = "rotate(20deg)";
-                  }}
-                  onMouseLeave={(e) => {
-                    e.currentTarget.style.borderColor = "var(--border)";
-                    e.currentTarget.style.transform = "rotate(0deg)";
                   }}
                 >
                   {theme === "dark" ? (
@@ -330,11 +316,12 @@ export function Nav() {
           }}
         >
           {/* Nav links */}
-          {NAV_LINKS.map(({ href, label }, i) => (
+          {NAV_LINKS.map(({ href, label }) => (
             <a
               key={href}
               href={href}
               onClick={closeMenu}
+              className="mobile-nav-link"
               style={{
                 fontFamily: "var(--font-playfair), serif",
                 fontSize: "1.8rem",
@@ -347,12 +334,6 @@ export function Nav() {
                 transition: "color 0.2s",
                 display: "block",
               }}
-              onTouchStart={(e) =>
-                (e.currentTarget.style.color = "var(--gold)")
-              }
-              onTouchEnd={(e) =>
-                (e.currentTarget.style.color = "var(--text-1)")
-              }
             >
               {label}
             </a>

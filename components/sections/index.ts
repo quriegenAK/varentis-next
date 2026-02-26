@@ -1,0 +1,10 @@
+export { Hero } from "./Hero";
+export { Marquee } from "./Marquee";
+export { Philosophy } from "./Philosophy";
+export { Services } from "./Services";
+export { Industries } from "./Industries";
+export { Pov } from "./Pov";
+export { Process } from "./Process";
+export { Founder } from "./Founder";
+export { Engage } from "./Engage";
+export { Contact } from "./Contact";

@@ -49,7 +49,7 @@ export function Cursor() {
       <div ref={ringRef} className="cur-ring" style={{
         ...base, zIndex: 9998,
         width: 32, height: 32,
-        border: '1px solid rgba(196,158,78,0.45)',
+        border: '1px solid rgba(125,211,252,0.30)',
         borderRadius: '50%',
         transition: 'width 0.3s, height 0.3s',
       }} />
