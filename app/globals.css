@@ -146,13 +146,6 @@ body::after {
   color: var(--gold) !important;
 }
 
-/* Hero: hide video and overlay on mobile, use static background */
-@media (max-width: 768px) {
-  .hero-section .hero-video,
-  .hero-section .hero-overlay {
-    display: none !important;
-  }
-}
 
 /* Contact form placeholder color */
 .contact-form input::placeholder,

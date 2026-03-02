@@ -35,7 +35,7 @@ export function Hero() {
           height: "100%",
           objectFit: "cover",
           zIndex: 0,
-          opacity: 0.4,
+          opacity: 0.7,
         }}
       >
         <source src="/videos/abasinco-hero.mp4" type="video/mp4" />
@@ -46,7 +46,7 @@ export function Hero() {
           position: "absolute",
           inset: 0,
           background:
-            "linear-gradient(to bottom, rgba(4,6,12,0.72) 0%, rgba(4,6,12,0.45) 50%, rgba(4,6,12,0.85) 100%)",
+            "linear-gradient(to bottom, rgba(4,6,12,0.50) 0%, rgba(4,6,12,0.25) 50%, rgba(4,6,12,0.65) 100%)",
           zIndex: 1,
         }}
       />
