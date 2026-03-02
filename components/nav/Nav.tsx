@@ -73,12 +73,9 @@ export function Nav() {
           right: 0,
           height: 72,
           zIndex: 1000,
-          borderBottom: pinned
-            ? "1px solid var(--border)"
-            : "1px solid transparent",
-          background: pinned || menuOpen ? "var(--bg-0)" : "transparent",
-          backdropFilter: pinned && !menuOpen ? "blur(24px)" : "none",
-          transition: "background 0.35s ease, border-color 0.35s ease",
+          borderBottom: "1px solid var(--border)",
+          background: "var(--bg-0)",
+          transition: "background 0.4s ease, border-color 0.4s ease",
         }}
       >
         <div
