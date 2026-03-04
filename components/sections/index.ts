@@ -8,3 +8,4 @@ export { Process } from "./Process";
 export { Founder } from "./Founder";
 export { Engage } from "./Engage";
 export { Contact } from "./Contact";
+export { Connect } from "./Connect";
