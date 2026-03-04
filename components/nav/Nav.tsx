@@ -92,6 +92,7 @@ export function Nav() {
           {/* Logo — full SVG wordmark */}
           <Link
             href="/"
+            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             style={{
               textDecoration: "none",
               display: "flex",
