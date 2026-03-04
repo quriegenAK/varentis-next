@@ -15,6 +15,7 @@ import {
   Founder,
   Engage,
   Contact,
+  Connect,
 } from '@/components/sections'
 
 export const revalidate = 60
@@ -38,6 +39,7 @@ export default async function Home() {
       <Founder data={founder} />
       <Engage />
       <Contact />
+      <Connect />
     </>
   )
 }
